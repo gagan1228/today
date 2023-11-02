@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="root"></div>
+        Name : 
+    <input type="text" name="" value="" id="abc">
+    <br>Email :
+    <input type="email" name="" value="" id="email">
+    <br>Password :
+    <input type="password" name="" value="" id="password">
+    <br>Age :
+    <input type="number" name="" value="" id="age">
+
+
+    <button onclick="capture()">click me</button>
+
+    <script>
+        function capture() {
+            let data = document.getElementById('root')
+            let data1 = document.getElementById('abc')
+            let email1=document.getElementById('email')
+            let password1=document.getElementById('password')
+            let age1=document.getElementById('age')
+            
+            data.innerHTML = `hello  ${data1.value} your are ${age1.value} old and mail id is ${email1.value}`
+            
+            console.log(data1.value)
+        }
+
+    </script>
+</body>
+
+</html>
